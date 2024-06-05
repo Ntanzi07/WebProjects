@@ -1,0 +1,115 @@
+.trocas{
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: first baseline;
+    gap: 5px;
+}
+
+.suasTrocas{
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &>div{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.cardTrocas{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.formPesq{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.pesquisa{
+    border-radius: 5px;
+    flex:3;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 3px;
+}
+.pesquisaS{
+    border-radius: 5px;
+    flex:1;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+.fbutton{
+    flex: 1;
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 3px;
+    transition: all ease .2s;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--color5-bg-color);
+    }
+}
+
+.results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 32em;
+    overflow-y: auto;
+    gap: 5px;
+    & div:nth-child(1n){
+        flex: 1;
+        min-width: 8rem;
+        max-width: 100%;
+        
+    }
+}
+
+.taxa{
+    font-size: large;
+    margin: 20px 0;
+}
+
+.slider{
+    overflow: hidden;
+    flex: 1;
+    max-height: 31em;
+}
+
+/* .slider-slid{
+    animation: 30s slide infinite linear;
+} */
+
+#slid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+
+@keyframes slide{
+    from{
+        transform: translateY(0);
+    }
+    to
+    {
+        transform: translateY(-100%);
+    }
+}

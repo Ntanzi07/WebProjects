@@ -1,0 +1,135 @@
+
+h1 {
+    color: black;
+    font-size: 2.8em;
+}
+
+
+.form-container{
+    background-color: var(--color3-bg-color);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 20px;
+    border: solid black 1px;
+    background-color: var(--color3-bg-color);
+    width: 22em;
+}
+.form .form-header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.form .form-header-text{
+    text-align: center;
+    width: 100%;
+}
+
+.form .form-sep{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+
+.form .form-item{
+    width: 100%;
+    margin: 8px 0;
+}
+
+.form .form-div{
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+}
+
+
+.form .form-input{
+   padding: .6rem .4rem .4rem .4rem;
+   background: none;
+   font-size: 1em;
+   border-style: none;
+   border-bottom: solid 2px;
+
+}
+
+.form .form-button{
+    width: 100%;
+    background: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border-style: solid;
+    transition: all .5s ease;
+    padding: 7px;
+    background-color: var(--color3-bg-color);
+    border-color: var(--color4-bg-color);
+    cursor: pointer;
+}
+
+.form .form-button:hover{
+    background: var(--color4-bg-color);
+    color: var(--color3-bg-color);
+}
+
+.form-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.form-links a{
+    font-size: 1em;
+    padding: 2px 5px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.form-links a:hover{
+    text-decoration:underline;
+}
+.form p{
+    text-align: center;
+    margin-top: 4px;
+    font-size: .8em;
+}
+
+.form-erro{
+    background-color: rgba(255, 69, 69, 0.541);
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.form-header svg{
+    top:50%;
+    left: 1rem;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    border-radius: 50px;
+    font-size: 2.2em;
+    transition: all .2s ease-in-out;
+    padding: 5px;
+    &:hover{
+        background-color: rgb(172, 172, 172);
+    }
+}
+
+.no-active{
+    display: none;
+}
+.active{
+    display: contents;
+}
